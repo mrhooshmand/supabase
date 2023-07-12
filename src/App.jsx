@@ -23,11 +23,11 @@ function App() {
 
   return (
     <>
-    <ul>
+    <select>
       {city.map((city) => (
-        <li key={city.name}>{city.name}</li>
+        <option key={city.name} value={city.name}>{city.name}</option>
       ))}
-    </ul>
+    </select>
     <ul>
       {countries.map((country) => (
         <li key={country.name}>{country.name}</li>
